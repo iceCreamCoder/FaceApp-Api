@@ -37,7 +37,7 @@ app.use(cors());
 // get
 
 app.get('/', (req,res) => {
-    res.send(database.users)
+    res.send("server is running")
 })
 
 
