@@ -1,5 +1,5 @@
 const express = require('express');
-// const PORT = process.env.PORT;
+const PORT = process.env.PORT;
 const bcrypt = require('bcrypt-nodejs');
 const app = express();
 const cors = require("cors");
@@ -56,6 +56,6 @@ app.put('/image', (req, res) => { image.handleImage(req, res, db)});
 app.post('/imageurl', (req, res) => { image.handleApiCall(req, res)});
 
 
-app.listen(3000, () => {
-    console.log(`App listening on port 3000`)
+app.listen(PORT || 3000, () => {
+    console.log(`App listening on port ${PORT}`)
 })
