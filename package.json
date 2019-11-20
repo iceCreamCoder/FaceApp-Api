@@ -9,9 +9,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "nodemon": "^1.19.4"
-  },
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "clarifai": "^2.9.1",
